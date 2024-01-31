@@ -1,0 +1,601 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+    --color-primary: #6C9BCF;
+    --color-danger: #ca35b3c3;
+    --color-sucess: #1B9C85;
+    --color-warning: #F7D060;
+    --color-info-dark: #7d8da1;
+    --color-dark: #363949;
+    --color-light: rgba(132, 139, 200, 0.18);
+    --color-dark-variant: #677483;
+    --card-border-radius: 2rem;
+    --border-radius-1: 0.4rem;
+    --border-radius: 2rem;
+    --card-padding: 1.8rem;
+    --padding-1: 1.2rem;
+    --box-shadow: 0 2rem 3rem var(--color-light);
+}
+
+
+.dark-mode-variable {
+    --color-background: #181a1e;
+    --color-white: #202528;
+    --color-dark: #5c6290dd;
+    --color-light: rgba(0, 0, 0, 0.4);
+    --box-shdow: 0 2rem 3rem var(--color-light);
+
+
+}
+
+.Usually {
+    display: none;
+    background: linear-gradient(#E6BDF2, #75BFB2, #BBD9D3);
+    inline-size: 100%;
+    margin: 0 auto;
+    gap: 1.8rem;
+    grid-template-columns: 12rem auto 23rem;
+}
+
+
+
+asideUsually {
+    block-size: 100vh;
+    position: fixed;
+}
+
+asideUsually .toggle {
+    display: flex;
+    align-items: center;
+    align-items: center;
+    margin-block-start: 1.4rem;
+}
+
+asideUsually .toggle .logo {
+    margin-inline-start: 0.8rem;
+    display: flex;
+    gap: 0.5rem;
+}
+
+asideUsually .toggle .logo img {
+    inline-size: 2rem;
+    block-size: 2rem;
+}
+
+asideUsually .screen {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-white);
+    box-shadow: var(--box-shadow);
+    border-radius: 15px;
+    block-size: 88vh;
+    position: relative;
+    inline-size: 10rem;
+    inset-block-start: 1.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+asideUsually .screen:hover {
+    box-shadow: none;
+}
+
+asideUsually .screen a {
+    display: flex;
+    align-items: center;
+    color: var(--color-info-dark);
+    block-size: 3.7rem;
+    gap: 1rem;
+    position: relative;
+    margin-inline-start: 2rem;
+    transition: all 0.3s ease;
+}
+
+asideUsually .screen a span {
+    font-size: 1.6rem;
+    transition: all 0.3s ease;
+}
+
+asideUsually .screen a:last-child {
+    position: absolute;
+    inset-block-end: 2rem;
+    inline-size: 100%;
+}
+
+asideUsually .screen a.active {
+    inline-size: 100%;
+    color: var(--color-primary);
+    background-color: var(--color-light);
+    margin-inline-start: 0;
+}
+
+asideUsually .screen a.active ::before {
+    content: "";
+    inline-size: 6px;
+    block-size: 18px;
+    background-color: var(--color-primary);
+}
+
+asideUsually .screen a.active span {
+    color: var(--color-primary);
+    margin-inline-start: calc(1rem - 3px);
+}
+
+asideUsually .screen a:hover {
+    color: var(--color-primary);
+}
+
+asideUsually .screen a:hover span {
+    margin-inline-start: 0.6rem;
+}
+
+.screen .home1 {
+    margin-block-start: -1000px;
+}
+
+.Usually .homey {
+    display: none;
+}
+
+
+.Usually .dark-mode-usually {
+    margin-block-start: 0.8rem;
+    margin-inline-start: 35rem;
+    background-color: var(--color-light);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    block-size: 1.6rem;
+    inline-size: 4.2rem;
+    cursor: pointer;
+    border-radius: var(--border-radius-1);
+    position: fixed;
+}
+
+.Usually .dark-mode-usually span {
+    font-size: 1.2rem;
+    inline-size: 50%;
+    block-size: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Usually .dark-mode-usually span.active {
+    background-color: var(--color-primary);
+    color: white;
+    border-radius: var(--border-radius-1);
+}
+
+
+
+.Usually .container-video1 {
+    display: flex;
+    align-items: center;
+}
+
+.Usually .container-video1 .video1-btn video {
+    border-radius: 0.5rem;
+    margin-block-start: 4rem;
+    margin-inline-start: 27rem;
+}
+
+.Usually .write-video1-btn h9 {
+    margin-inline-start: 29rem;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+.Usually .container-video1 .video2-btn video {
+    border-radius: 0.5rem;
+    margin-block-start: 4rem;
+    margin-inline-start: 27rem;
+}
+
+.Usually .write-video2-btn h9 {
+    margin-inline-start: 29rem;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+.Usually .container-video1 .video3-btn video {
+    border-radius: 0.5rem;
+    margin-block-start: 4rem;
+    margin-inline-start: 27rem;
+}
+
+.Usually .write-video3-btn h9 {
+    margin-inline-start: 29rem;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+.Usually .container-video1 .video4-btn video {
+    border-radius: 0.5rem;
+    margin-block-start: 4rem;
+    margin-inline-start: 27rem;
+}
+
+.Usually .write-video4-btn h9 {
+    margin-inline-start: 29rem;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+.Usually .container-video1 .video5-btn video {
+    border-radius: 0.5rem;
+    margin-block-start: 4rem;
+    margin-inline-start: 27rem;
+}
+
+.Usually .write-video5-btn h9 {
+    margin-inline-start: 29rem;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+.Usually .container-video1 .video6-btn video {
+    border-radius: 0.5rem;
+    margin-block-start: 4rem;
+    margin-inline-start: 27rem;
+}
+
+.Usually .write-video6-btn h9 {
+    margin-inline-start: 29rem;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+.Usually .container-video1 .video7-btn video {
+    border-radius: 0.5rem;
+    margin-block-start: 4rem;
+    margin-inline-start: 27rem;
+}
+
+.Usually .write-video7-btn h9 {
+    margin-inline-start: 29rem;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+@media screen and (max-width : 1200px) {
+    .Usually .screen .toggle .logo h2 {
+        display: none;
+    }
+
+    .Usually .dark-mode-memories {
+        margin-block-start: 0.8rem;
+        margin-inline-start: 20rem;
+        background-color: var(--color-light);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        block-size: 1.6rem;
+        inline-size: 4.2rem;
+        cursor: pointer;
+        border-radius: var(--border-radius-1);
+        position: fixed;
+    }
+
+
+
+    .Usually .container-video1 .video1-btn video {
+
+        margin-block-start: 4rem;
+        margin-inline-start: 15rem;
+    }
+
+    .Usually .write-video1-btn h9 {
+        margin-inline-start: 19rem;
+        font-family: 'Courier New', Courier, monospace;
+
+    }
+
+    .Usually .container-video1 .video2-btn video {
+
+        margin-block-start: 4rem;
+        margin-inline-start: 15rem;
+    }
+
+    .Usually .write-video2-btn h9 {
+        margin-inline-start: 19rem;
+        font-family: 'Courier New', Courier, monospace;
+
+    }
+
+    .Usually .container-video1 .video3-btn video {
+
+        margin-block-start: 4rem;
+        margin-inline-start: 15rem;
+    }
+
+    .Usually .write-video3-btn h9 {
+        margin-inline-start: 16rem;
+        font-family: 'Courier New', Courier, monospace;
+
+    }
+
+    .Usually .container-video1 .video4-btn video {
+
+        margin-block-start: 4rem;
+        margin-inline-start: 15rem;
+    }
+
+    .Usually .write-video4-btn h9 {
+        margin-inline-start: 19rem;
+        font-family: 'Courier New', Courier, monospace;
+
+    }
+
+    .Usually .container-video1 .video5-btn video {
+
+        margin-block-start: 4rem;
+        margin-inline-start: 15rem;
+    }
+
+    .Usually .write-video5-btn h9 {
+        margin-inline-start: 19rem;
+        font-family: 'Courier New', Courier, monospace;
+
+    }
+
+    .Usually .container-video1 .video6-btn video {
+
+        margin-block-start: 4rem;
+        margin-inline-start: 15rem;
+    }
+
+    .Usually .write-video6-btn h9 {
+        margin-inline-start: 19rem;
+        font-family: 'Courier New', Courier, monospace;
+
+    }
+
+    .Usually .container-video1 .video7-btn video {
+
+        margin-block-start: 4rem;
+        margin-inline-start: 15rem;
+    }
+
+    .Usually .write-video7-btn h9 {
+        margin-inline-start: 19rem;
+        font-family: 'Courier New', Courier, monospace;
+
+    }
+
+}
+
+@media screen and (max-width : 768px) {
+    asideUsually .screen {
+        display: none;
+    }
+
+    .Usually .write-video1-btn h9 {
+        display: none;
+    }
+
+    .Usually .write-video2-btn h9 {
+        display: none;
+    }
+
+    .Usually .write-video3-btn h9 {
+        display: none;
+    }
+
+    .Usually .write-video4-btn h9 {
+        display: none;
+    }
+
+    .Usually .write-video5-btn h9 {
+        display: none;
+    }
+
+    .Usually .write-video6-btn h9 {
+        display: none;
+    }
+
+    .Usually .write-video7-btn h9 {
+        display: none;
+    }
+
+    .Usually .homey {
+        position: fixed;
+        display: inline-block;
+
+    }
+
+    .Usually b {
+        display: flex;
+        align-items: center;
+        color: var(--color-info-dark);
+        block-size: 3.7rem;
+        gap: 1rem;
+        position: relative;
+        margin-inline-start: 2rem;
+        transition: all 0.3s ease;
+    }
+
+    .Usually b span {
+        font-size: 1.6rem;
+        transition: all 0.3s ease;
+    }
+
+    .Usually b:last-child {
+        position: absolute;
+        inset-block-end: 2rem;
+        inline-size: 100%;
+    }
+
+    .Usually b.active {
+        inline-size: 100%;
+        color: var(--color-primary);
+        background-color: var(--color-light);
+        margin-inline-start: 0;
+    }
+
+    .Usually b.active ::before {
+        content: "";
+        inline-size: 6px;
+        block-size: 18px;
+        background-color: var(--color-primary);
+    }
+
+    .Usually b.active span {
+        color: var(--color-primary);
+        margin-inline-start: calc(1rem - 3px);
+    }
+
+    .Usually b:hover {
+        color: var(--color-primary);
+    }
+
+    .Usually b:hover span {
+        margin-inline-start: 0.6rem;
+    }
+
+    .Usually .container-video1 .video1-btn video {
+
+        margin-block-start: 4rem;
+        margin-inline-start: 6rem;
+    }
+
+    .Usually .container-video1 .video2-btn video {
+
+        margin-block-start: 4rem;
+        margin-inline-start: 6rem;
+    }
+
+    .Usually .container-video1 .video3-btn video {
+
+        margin-block-start: 4rem;
+        margin-inline-start: 6rem;
+    }
+
+    .Usually .container-video1 .video4-btn video {
+
+        margin-block-start: 4rem;
+        margin-inline-start: 6rem;
+    }
+
+    .Usually .container-video1 .video5-btn video {
+
+        margin-block-start: 4rem;
+        margin-inline-start: 6rem;
+    }
+
+    .Usually .container-video1 .video6-btn video {
+
+        margin-block-start: 4rem;
+        margin-inline-start: 6rem;
+    }
+
+    .Usually .container-video1 .video7-btn video {
+
+        margin-block-start: 4rem;
+        margin-inline-start: 6rem;
+    }
+
+
+}
+
+@media screen and (max-width : 450px) {
+    .Usually {
+        overflow: hidden;
+    }
+
+    .Usually .container-video1 .video1-btn video {
+        margin-inline-start: 0.6rem;
+        inline-size: 420px;
+        border-radius: 0.5rem;
+    }
+
+    .Usually .container-video1 .video2-btn video {
+        margin-inline-start: 0.6rem;
+        inline-size: 420px;
+        border-radius: 0.5rem;
+    }
+
+    .Usually .container-video1 .video3-btn video {
+        margin-inline-start: 0.6rem;
+        inline-size: 420px;
+        border-radius: 0.5rem;
+    }
+
+    .Usually .container-video1 .video4-btn video {
+        margin-inline-start: 0.6rem;
+        inline-size: 420px;
+        border-radius: 0.5rem;
+    }
+
+    .Usually .container-video1 .video5-btn video {
+        margin-inline-start: 0.6rem;
+        inline-size: 420px;
+        border-radius: 0.5rem;
+    }
+
+    .Usually .container-video1 .video6-btn video {
+        margin-inline-start: 0.6rem;
+        inline-size: 420px;
+        border-radius: 0.5rem;
+    }
+
+    .Usually .container-video1 .video7-btn video {
+        margin-inline-start: 0.6rem;
+        inline-size: 420px;
+        border-radius: 0.5rem;
+    }
+
+
+
+}
+
+@media screen and (max-width : 360px) {
+    .Usually {
+        overflow: hidden;
+    }
+
+    .Usually .container-video1 .video1-btn video {
+        margin-inline-start: 1.5rem;
+        inline-size: 320px;
+        border-radius: 0.5rem;
+    }
+
+    .Usually .container-video1 .video2-btn video {
+        margin-inline-start: 1.5rem;
+        inline-size: 320px;
+        border-radius: 0.5rem;
+    }
+
+    .Usually .container-video1 .video3-btn video {
+        margin-inline-start: 1.5rem;
+        inline-size: 320px;
+        border-radius: 0.5rem;
+    }
+
+    .Usually .container-video1 .video4-btn video {
+        margin-inline-start: 1.5rem;
+        inline-size: 320px;
+        border-radius: 0.5rem;
+    }
+
+    .Usually .container-video1 .video5-btn video {
+        margin-inline-start: 1.5rem;
+        inline-size: 320px;
+        border-radius: 0.5rem;
+    }
+
+    .Usually .container-video1 .video6-btn video {
+        margin-inline-start: 1.5rem;
+        inline-size: 320px;
+        border-radius: 0.5rem;
+    }
+
+    .Usually .container-video1 .video7-btn video {
+        margin-inline-start: 1.5rem;
+        inline-size: 320px;
+        border-radius: 0.5rem;
+    }
+
+
+
+}

@@ -1,0 +1,379 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+    --color-primary: #6C9BCF;
+    --color-danger: #ca35b3c3;
+    --color-sucess: #1B9C85;
+    --color-warning: #F7D060;
+    --color-info-dark: #7d8da1;
+    --color-dark: #a2e01375;
+    --color-light: rgba(132, 139, 200, 0.18);
+    --color-dark-variant: #677483;
+    --card-border-radius: 2rem;
+    --border-radius-1: 0.4rem;
+    --border-radius: 2rem;
+    --card-padding: 1.8rem;
+    --padding-1: 1.2rem;
+    --box-shadow: 0 2rem 3rem var(--color-light);
+}
+
+
+.dark-mode-variable {
+    --color-background: #181a1e;
+    --color-white: #202528;
+    --color-dark: #5c6290dd;
+    --color-light: rgba(0, 0, 0, 0.4);
+    --box-shdow: 0 2rem 3rem var(--color-light);
+
+    .Dashboard {
+        background-color: #202528;
+    }
+
+    .Dashboard .right-section {
+        background-color: #202528;
+    }
+}
+
+.Dashboard {
+    background: linear-gradient(#BDEDF2, #F2D68D, #D99E91, #D9695F, #733636);
+    display: none;
+}
+
+.Dashboard .homeq {
+    border-radius: 0.5rem;
+    position: fixed;
+    display: none;
+}
+
+.Dashboard button {
+    display: flex;
+    align-items: center;
+    color: var(--color-info-dark);
+    block-size: 3.7rem;
+    gap: 1rem;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.Dashboard button span {
+    font-size: 1.6rem;
+    transition: all 0.3s ease;
+}
+
+.Dashboard button:last-child {
+    position: absolute;
+    inset-block-end: 2rem;
+    inline-size: 100%;
+}
+
+.Dashboard button.active {
+    inline-size: 100%;
+    color: var(--color-primary);
+    background-color: var(--color-light);
+    margin-inline-start: 0;
+}
+
+.Dashboard button.active ::before {
+    content: "";
+    inline-size: 6px;
+    block-size: 18px;
+    background-color: var(--color-primary);
+}
+
+.Dashboard button.active span {
+    color: var(--color-primary);
+    margin-inline-start: calc(1rem - 3px);
+}
+
+.Dashboard button:hover {
+    color: var(--color-primary);
+}
+
+.Dashboard button:hover span {
+    margin-inline-start: 0.6rem;
+}
+
+
+.Dashboard .screen {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0);
+    box-shadow: var(--box-shadow);
+    border-radius: 15px;
+    block-size: 100vh;
+    inline-size: 10rem;
+    position: fixed;
+    z-index: 3;
+    inset-block-start: 1.5rem;
+    cursor: pointer;
+    animation: showMenu 0.4s ease forwards;
+    transition: all 0.3s ease;
+}
+
+
+.Dashboard .screen:hover {
+    box-shadow: none;
+}
+
+.Dashboard .screen a {
+    display: flex;
+    align-items: center;
+    color: var(--color-info-dark);
+    block-size: 3.7rem;
+    gap: 1rem;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.Dashboard .screen a span {
+    font-size: 1.6rem;
+    transition: all 0.3s ease;
+}
+
+.Dashboard .screen a:last-child {
+    position: absolute;
+    inset-block-end: 2rem;
+    inline-size: 100%;
+}
+
+.Dashboard .screen a.active {
+    inline-size: 100%;
+    color: var(--color-primary);
+    background-color: var(--color-light);
+    margin-inline-start: 0;
+}
+
+.Dashboard .screen a.active ::before {
+    content: "";
+    inline-size: 6px;
+    block-size: 18px;
+    background-color: var(--color-primary);
+}
+
+.Dashboard .screen a.active span {
+    color: var(--color-primary);
+    margin-inline-start: calc(1rem - 3px);
+}
+
+.Dashboard .screen a:hover {
+    color: var(--color-primary);
+}
+
+.Dashboard .screen a:hover span {
+    margin-inline-start: 0.6rem;
+}
+
+.Dashboard .screen .toggle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-block-start: 1rem;
+    margin-inline-start: 0.5rem;
+}
+
+.Dashboard .screen .toggle .logo {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.Dashboard .screen .toggle .logo img {
+    inline-size: 2rem;
+    block-size: 2rem;
+}
+
+
+.Dashboard .screen .home3 {
+    margin-block-start: -75rem;
+    margin-inline-start: 4rem;
+}
+
+.Dashboard .right-section {
+    box-shadow: inset;
+    position: fixed;
+    align-items: center;
+}
+
+.Dashboard .right-section .nav-Dashboard {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    block-size: 8rem;
+}
+
+.Dashboard .right-section .nav-Dashboard .dark-mode-Dashboard {
+    margin-block-start: 3rem;
+    background-color: var(--color-light);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    block-size: 1.6rem;
+    inline-size: 4.2rem;
+    cursor: pointer;
+    border-radius: var(--border-radius-1);
+
+}
+
+.Dashboard .right-section .nav-Dashboard .dark-mode-Dashboard span {
+    font-size: 1.2rem;
+    inline-size: 50%;
+    block-size: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Dashboard .right-section .nav-Dashboard .dark-mode-Dashboard span.active {
+    background-color: var(--color-primary);
+    color: white;
+    border-radius: var(--border-radius-1);
+}
+
+.Dashboard .right-section .nav-Dashboard .profile {
+    display: flex;
+    gap: 2rem;
+    margin-block-start: 3rem;
+
+    text-align: center;
+}
+
+.Dashboard .nav-Dashboard .profile-photo {
+    inline-size: 2.8rem;
+    block-size: 2.8rem;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+
+.Dashboard .user-profile-Dashboard {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    text-align: center;
+    margin-block-start: 3rem;
+    margin-inline-start: 4rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.Dashboard .user-profile-Dashboard:hover {
+    box-shadow: none;
+}
+
+.Dashboard .user-profile-Dashboard img {
+    inline-size: 3rem;
+    block-size: 3rem;
+    border-radius: 50%;
+}
+
+.Dashboard .user-profile-Dashboard h7 {
+    margin-inline-start: -3rem;
+}
+
+.Dashboard h8 {
+    margin-block-start: 4rem;
+    margin-inline-start: -5rem;
+}
+
+.Dashboard .container-photo h2 {
+    margin-inline-start: 12rem;
+}
+
+.Dashboard .container-photo {
+    margin-block-start: 1.3rem;
+}
+
+.Dashboard .container-photo .user-list {
+    background-color: var(--color-white);
+    padding: var(--card-padding);
+    border-radius: var(--card-border-radius);
+    margin-block-start: 1rem;
+    box-shadow: var(--box-shadow);
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1.4rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.Dashboard .container-photo .user-list:hover {
+    box-shadow: none;
+}
+
+.Dashboard .container-photo .user-list .user {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-inline-start: 12rem;
+    margin-block-start: 5rem;
+
+
+}
+
+
+
+
+.right-section {
+    inline-size: 94%;
+    margin: 0 auto 4rem;
+}
+
+.right-section .nav-Dashboard {
+    position: fixed;
+    inset-block-start: 0;
+    inset-inline-start: 0;
+    align-items: center;
+    background-color: var(--color-white);
+    padding: 0 var(--padding-1);
+    block-size: 4.6rem;
+    inline-size: 100%;
+    z-index: 2;
+    box-shadow: 0 1rem 1rem var(--color-light);
+    margin: 0;
+}
+
+.right-section .nav-Dashboard .dark-mode {
+    inline-size: 4.4rem;
+    position: absolute;
+    inset-inline-start: 66%;
+
+}
+
+.Dashboard .container-photo .user-list .user img {
+    inline-size: 200px;
+    block-size: 200px;
+}
+
+.Dashboard .container-photo {
+    margin-block-start: 0;
+}
+
+@media screen and (max-width : 768px) {
+
+    .Dashboard .homeq {
+        display: block;
+    }
+
+    .Dashboard .screen {
+        display: none;
+    }
+
+    .Dashboard .right-section {
+        display: none;
+    }
+
+    .Dashboard .container-photo {
+        margin-block-start: 0;
+    }
+
+    .Dashboard .container-photo .user-list .user {
+        margin-inline-start: 3rem;
+
+    }
+
+    .Dashboard .container-photo .user-list .user img {
+        inline-size: 200px;
+        block-size: 200px;
+    }
+}

@@ -1,0 +1,1108 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+    --color-primary: #6C9BCF;
+    --color-danger: #ca35b3c3;
+    --color-sucess: #1B9C85;
+    --color-warning: #F7D060;
+    --color-info-dark: #7d8da1;
+    --color-dark: #a2e01375;
+    --color-light: rgba(132, 139, 200, 0.18);
+    --color-dark-variant: #677483;
+    --card-border-radius: 2rem;
+    --border-radius-1: 0.4rem;
+    --border-radius: 2rem;
+    --card-padding: 1.8rem;
+    --padding-1: 1.2rem;
+    --box-shadow: 0 2rem 3rem var(--color-light);
+}
+
+
+h13 {
+    color: #F8B700;
+    font-weight: 300;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h14 {
+    color: rgba(232, 236, 10, 0.955);
+    font-weight: 900;
+    font-size: 60px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif fantasy;
+    font-style: oblique;
+
+}
+
+h15 {
+    font-size: 15px;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h16 {
+    color: #be0707;
+    font-size: 10px;
+    font-weight: 400;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h17 {
+    color: #be0707;
+    font-size: 10px;
+    font-weight: 400;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h18 {
+    color: #be0707;
+    font-size: 10px;
+    font-weight: 400;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h19 {
+    color: #661c3c;
+    font-size: 12px;
+    font-weight: 800;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h20 {
+    color: white;
+    font-size: 30px;
+}
+
+h21 {
+    color: white;
+    font-size: 15px;
+
+}
+
+h22 {
+    color: #F8B7;
+    font-size: 15px;
+}
+
+h23 {
+    color: #F7D060;
+    font-size: 18px;
+}
+
+
+.Card {
+    display: none;
+    background-color: black;
+    inline-size: 100%;
+    block-size: 845px;
+    overflow: hidden;
+}
+
+.Card .screen .home4 {
+    margin-inline-start: 0.5rem;
+    margin-block-start: 0.5rem;
+    position: fixed;
+
+}
+
+.Card a {
+    display: flex;
+    align-items: center;
+    color: var(--color-info-dark);
+    block-size: 3.7rem;
+    gap: 1rem;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.Card a span {
+    font-size: 1.6rem;
+    transition: all 0.3s ease;
+}
+
+.Card a:last-child {
+    position: absolute;
+    inset-block-end: 2rem;
+    inline-size: 100%;
+}
+
+.Card a.active {
+    inline-size: 100%;
+    color: var(--color-primary);
+    background-color: var(--color-light);
+    margin-inline-start: 0;
+}
+
+.Card a.active ::before {
+    content: "";
+    inline-size: 6px;
+    block-size: 18px;
+    background-color: var(--color-primary);
+}
+
+.Card a.active span {
+    color: var(--color-primary);
+    margin-inline-start: calc(1rem - 3px);
+}
+
+.Card a:hover {
+    color: var(--color-primary);
+}
+
+.Card a:hover span {
+    margin-inline-start: 0.6rem;
+}
+
+
+.Card .screen .toggle {
+    background-color: #661c3c;
+    inline-size: 615px;
+    block-size: 434px;
+    margin-inline-start: 7rem;
+    margin-block-start: 2rem;
+    border-radius: 0.5rem;
+    transform: scale3d(1.1, 1.1, 1);
+    animation: star 10s ease-out infinite;
+    position: relative;
+}
+
+.Card .screen .toggle .screenmain img {
+    inline-size: 200px;
+    block-size: 200px;
+    border-radius: 0.5rem;
+    margin-inline-start: 415px;
+    margin-block-start: 64.3px;
+    position: relative;
+}
+
+
+
+
+
+.Card .screen .toggle .rightscreen img {
+    inline-size: 200px;
+    block-size: 170px;
+    margin-inline-start: 415px;
+    border-radius: 0.5rem;
+    position: relative;
+    inset-block-start: 0;
+    inset-inline-start: 0;
+
+
+}
+
+
+.Card .screen .toggle .right img {
+    inline-size: 40px;
+    block-size: 40px;
+    margin-block-start: 390px;
+    margin-inline-start: 575px;
+    border-radius: 0.5rem;
+    position: absolute;
+    inset-block-start: 0;
+    inset-inline-start: 0;
+    display: flex;
+}
+
+.Card .screen .toggle .screenchair img {
+    display: flex;
+    inline-size: 300px;
+    block-size: 430px;
+    margin-block-start: -430px;
+    margin-inline-start: 0px;
+    border-radius: 0.5rem;
+    position: relative;
+}
+
+.Card .screen .toggle button {
+    background-color: #f6f0d077;
+    border-radius: 0.3rem;
+    inline-size: 500px;
+    block-size: 370px;
+    margin-block-start: -400px;
+    margin-inline-start: 40px;
+    border-radius: 0.5rem;
+    transform: scale3d(1.1, 1.1, 1);
+    animation: star 10s ease-out infinite;
+    position: absolute;
+}
+
+.Card .screen .toggle .content .content1 {
+    background-color: #d324249c;
+    inline-size: 488px;
+    block-size: 360px;
+    margin-inline-start: 5px;
+    position: relative;
+}
+
+.Card .screen .toggle .content .content1 .content2 {
+    background-color: #FFD67C;
+    inline-size: 10px;
+    block-size: 10px;
+    transform: scale3d(1.1, 1.1, 1);
+    animation: star 10s ease-out infinite;
+    position: relative;
+}
+
+.Card .screen .toggle .content .content1 .content3 {
+    background: #FFD67C;
+    inline-size: 10px;
+    block-size: 10px;
+    margin-block-start: 340px;
+    transform: scale3d(1.1, 1.1, 1);
+    animation: star 10s ease-out infinite;
+    position: relative;
+}
+
+.Card .screen .toggle .content .content1 .content4 {
+    background-color: #FFD67C;
+    inline-size: 10px;
+    block-size: 10px;
+    margin-inline-start: 479px;
+    margin-block-start: -10px;
+    transform: scale3d(1.1, 1.1, 1);
+    transform: scale3d(1.1, 1.1, 1);
+    animation: star 10s ease-out infinite;
+    animation: star 10s ease-out infinite;
+    position: relative;
+
+}
+
+.Card .screen .toggle .content .content1 .content5 {
+    background-color: #FFD67C;
+    inline-size: 10px;
+    block-size: 10px;
+    margin-inline-start: 479px;
+    margin-block-start: -360px;
+    transform: scale3d(1.1, 1.1, 1);
+    animation: star 10s ease-out infinite;
+    position: relative;
+}
+
+.Card .screen .toggle .content .content1 .content6 {
+    background-color: #e7a412bc;
+    inline-size: 470px;
+    block-size: 341px;
+    margin-inline-start: 9px;
+    position: relative;
+}
+
+.Card .screen .toggle .content .content1 .content6 .content7 {
+    background-color: #d3242456;
+    inline-size: 463px;
+    block-size: 335px;
+    margin-block-start: 3.5px;
+    margin-inline-start: 3.5px;
+    position: absolute;
+
+}
+
+.Card .screen .toggle .content .content1 .content6 .content7 .h13 {
+    margin-block-start: 0.5rem;
+}
+
+.Card .screen .toggle .content .content1 .content6 .content7 h16 {
+    margin-block-start: 1000px;
+    margin-inline-start: 100px;
+}
+
+
+.Card .screen .toggle .content .content1 .content6 .content7 h17 {
+    margin-inline-start: 140px;
+}
+
+
+.Card .screen .toggle .content .content1 .content6 .content7 h18 {
+    margin-inline-start: 150px;
+}
+
+
+.Card .screen .toggle .content .content1 .content6 .content7 h19 {
+    margin-inline-start: 170px;
+}
+
+
+.Card .screen .toggle .content .content1 .content6 .content7 .contentlongden {
+    background-color: #F7D060;
+    inline-size: 20px;
+    block-size: 20px;
+}
+
+.Card .screen .rightcontent {
+    position: absolute;
+    margin-block-start: -450px;
+    margin-inline-start: 800px;
+
+}
+
+.Card .screen .rightcontent .h21 {
+    block-size: 500px;
+    inline-size: 400px;
+    overflow: hidden;
+}
+
+.Card .screen .rightcontent .h22 {
+    margin-block-start: -20px;
+    margin-inline-start: -700px;
+    inline-size: 800px;
+    position: absolute;
+    overflow: hidden;
+}
+
+.Card .screen .rightcontent .h23 {
+    margin-block-start: -50px;
+    margin-inline-start: 150px;
+    position: absolute;
+    overflow: hidden;
+}
+
+.Card .phaohoa {
+    margin-block-start: -550px;
+}
+
+@media screen and (max-width : 1200px) {
+    .Card {
+        background-color: black;
+        block-size: 1500px;
+    }
+
+    .Card .screen .rightcontent {
+        margin-block-start: 30px;
+        margin-inline-start: 100px;
+    }
+
+    .Card .screen .rightcontent .h22 {
+        margin-inline-start: 0px;
+        inline-size: 400px;
+    }
+
+    .Card .screen .rightcontent .h23 {
+        margin-block-start: 300px;
+    }
+
+    .Card .phaohoa {
+        margin-block-start: 0px;
+    }
+}
+
+
+@media screen and (max-width : 768px) {
+    .Card .phaohoa {
+        margin-block-start: 0px;
+    }
+
+
+}
+
+
+@media screen and (max-width : 450px) {
+    .Card {
+        inline-size: 100%;
+        block-size: 100%;
+    }
+
+    .Card .screen .home4 {
+        margin-inline-start: 0rem;
+        margin-block-start: 0rem;
+        position: fixed;
+
+    }
+
+    .Card a {
+        display: flex;
+        align-items: center;
+        color: var(--color-info-dark);
+        block-size: 3.7rem;
+        gap: 1rem;
+        position: relative;
+        transition: all 0.3s ease;
+    }
+
+    .Card a span {
+        font-size: 1.6rem;
+        transition: all 0.3s ease;
+    }
+
+    .Card a:last-child {
+        position: absolute;
+        inset-block-end: 2rem;
+        inline-size: 100%;
+    }
+
+    .Card a.active {
+        inline-size: 100%;
+        color: var(--color-primary);
+        background-color: var(--color-light);
+        margin-inline-start: 0;
+    }
+
+    .Card a.active ::before {
+        content: "";
+        inline-size: 6px;
+        block-size: 18px;
+        background-color: var(--color-primary);
+    }
+
+    .Card a.active span {
+        color: var(--color-primary);
+        margin-inline-start: calc(1rem - 3px);
+    }
+
+    .Card a:hover {
+        color: var(--color-primary);
+    }
+
+    .Card a:hover span {
+        margin-inline-start: 0.6rem;
+    }
+
+
+    .Card .screen .toggle {
+        background-color: #661c3c;
+        inline-size: 345px;
+        block-size: 200px;
+        margin-block-start: 32rem;
+        margin-inline-start: 3rem;
+        border-radius: 0.5rem;
+        transform: scale3d(1.1, 1.1, 1);
+        animation: star 10s ease-out infinite;
+        position: relative;
+    }
+
+    .Card .screen .toggle .screenmain img {
+        inline-size: 80px;
+        block-size: 70px;
+        border-radius: 0.5rem;
+        margin-inline-start: 264px;
+        margin-block-start: 130px;
+        position: absolute;
+    }
+
+
+
+
+
+    .Card .screen .toggle .rightscreen img {
+        display: flex;
+        inline-size: 80px;
+        block-size: 70px;
+        margin-inline-start: 265px;
+        border-radius: 0.5rem;
+        position: absolute;
+        inset-block-start: 0;
+        inset-inline-start: 0;
+
+
+    }
+
+
+    .Card .screen .toggle .right img {
+        inline-size: 25px;
+        block-size: 25px;
+        margin-block-start: 170px;
+        margin-inline-start: 315px;
+        border-radius: 0.2rem;
+        position: absolute;
+        inset-block-start: 0;
+        inset-inline-start: 0;
+        display: flex;
+    }
+
+    .Card .screen .toggle .screenchair img {
+        display: flex;
+        inline-size: 128.5px;
+        block-size: 200px;
+        margin-block-start: -430px;
+        margin-inline-start: 0px;
+        border-radius: 0.5rem;
+        position: relative;
+    }
+
+    .Card .screen .toggle button {
+
+        background-color: #f6f0d077;
+        border-radius: 0.3rem;
+        inline-size: 270px;
+        block-size: 170px;
+        margin-block-start: -185px;
+        margin-inline-start: 25px;
+        border-radius: 0.5rem;
+        transform: scale3d(1.1, 1.1, 1);
+        animation: star 10s ease-out infinite;
+        position: absolute;
+    }
+
+    .Card .screen .toggle .content .content1 {
+        background-color: #d324249c;
+        inline-size: 260px;
+        block-size: 160.5px;
+        border-radius: 0.5rem;
+        margin-inline-start: 5px;
+        position: relative;
+    }
+
+    .Card .screen .toggle .content .content1 .content2 {
+        background-color: #FFD67C;
+        inline-size: 8px;
+        block-size: 8px;
+        border-radius: 0.2rem;
+        transform: scale3d(1.1, 1.1, 1);
+        animation: star 10s ease-out infinite;
+        position: relative;
+    }
+
+    .Card .screen .toggle .content .content1 .content3 {
+        background: #FFD67C;
+        inline-size: 8px;
+        block-size: 8px;
+        border-radius: 0.2rem;
+        margin-block-start: 144.8px;
+        transform: scale3d(1.1, 1.1, 1);
+        animation: star 10s ease-out infinite;
+        position: relative;
+    }
+
+    .Card .screen .toggle .content .content1 .content4 {
+        background-color: #FFD67C;
+        inline-size: 8px;
+        block-size: 8px;
+        border-radius: 0.2rem;
+        margin-inline-start: 253px;
+        margin-block-start: -8px;
+        transform: scale3d(1.1, 1.1, 1);
+        transform: scale3d(1.1, 1.1, 1);
+        animation: star 10s ease-out infinite;
+        animation: star 10s ease-out infinite;
+        position: relative;
+
+    }
+
+    .Card .screen .toggle .content .content1 .content5 {
+        background-color: #FFD67C;
+        inline-size: 8px;
+        block-size: 8px;
+        border-radius: 0.2rem;
+        margin-inline-start: 252.4px;
+        margin-block-start: -161px;
+        transform: scale3d(1.1, 1.1, 1);
+        animation: star 10s ease-out infinite;
+        position: relative;
+    }
+
+    .Card .screen .toggle .content .content1 .content6 {
+        background-color: #e7a412bc;
+        inline-size: 247.2px;
+        block-size: 146px;
+        border-radius: 0.2rem;
+        margin-inline-start: 7px;
+        position: relative
+    }
+
+
+
+    .Card .screen .toggle .content .content1 .content6 .content7 {
+        background-color: #d3242456;
+        inline-size: 240px;
+        block-size: 139.3px;
+        border-radius: 2rem;
+        margin-block-start: 3.5px;
+        margin-inline-start: 3.5px;
+        position: absolute;
+
+    }
+
+    h13 {
+        color: #F8B700;
+        font-weight: 300;
+        font-size: 17px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    h14 {
+        color: rgba(232, 236, 10, 0.955);
+        font-weight: 900;
+        font-size: 12px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif fantasy;
+        font-style: oblique;
+
+    }
+
+    h15 {
+        font-size: 10px;
+        color: white;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    h16 {
+        color: #be0707;
+        font-size: 6.8px;
+        font-weight: 400;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    h17 {
+        color: #be0707;
+        font-size: 6.8px;
+        font-weight: 400;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    h18 {
+        color: #be0707;
+        font-size: 6.8px;
+        font-weight: 400;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    h19 {
+        color: #661c3c;
+        font-size: 8px;
+        font-weight: 800;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    h20 {
+        color: white;
+        font-size: 15px;
+    }
+
+    h21 {
+        color: white;
+        font-size: 8px;
+
+    }
+
+    h22 {
+        color: #F8B7;
+        font-size: 8px;
+    }
+
+    h23 {
+        color: #F7D060;
+        font-size: 10px;
+    }
+
+
+    .Card .screen .toggle .content .content1 .content6 .content7 .h13 {
+        margin-block-start: 0.5rem;
+    }
+
+    .Card .screen .toggle .content .content1 .content6 .content7 h16 {
+
+        margin-block-start: 1000px;
+        margin-inline-start: 50px;
+    }
+
+
+    .Card .screen .toggle .content .content1 .content6 .content7 h17 {
+        margin-inline-start: 40px;
+    }
+
+
+    .Card .screen .toggle .content .content1 .content6 .content7 h18 {
+        margin-inline-start: 50px;
+    }
+
+
+    .Card .screen .toggle .content .content1 .content6 .content7 h19 {
+
+        margin-inline-start: 70px;
+    }
+
+
+    .Card .screen .toggle .content .content1 .content6 .content7 .contentlongden {
+        background-color: #F7D060;
+        inline-size: 10px;
+        block-size: 10px;
+    }
+
+    .Card .screen .rightcontent {
+        position: absolute;
+        margin-block-start: 20px;
+        margin-inline-start: 60px;
+
+    }
+
+    .Card .screen .rightcontent .h21 {
+        block-size: 500px;
+        inline-size: 300px;
+        overflow: hidden;
+    }
+
+    .Card .screen .rightcontent .h22 {
+        margin-block-start: -250px;
+        margin-inline-start: 0px;
+        inline-size: 280px;
+        position: absolute;
+        overflow: hidden;
+    }
+
+    .Card .screen .rightcontent .h23 {
+        margin-block-start: -50px;
+        margin-inline-start: 150px;
+        position: absolute;
+        overflow: hidden;
+    }
+
+    .Card .phaohoa {
+        margin-block-start: -250px;
+    }
+
+}
+
+@media screen and (max-width : 360px) {
+    .Card {
+        inline-size: 100%;
+        block-size: 100%;
+    }
+
+    .Card .screen .home4 {
+        margin-inline-start: 0rem;
+        margin-block-start: 0rem;
+        position: fixed;
+
+    }
+
+    .Card a {
+        display: flex;
+        align-items: center;
+        color: var(--color-info-dark);
+        block-size: 3.7rem;
+        gap: 1rem;
+        position: relative;
+        transition: all 0.3s ease;
+    }
+
+    .Card a span {
+        font-size: 1.6rem;
+        transition: all 0.3s ease;
+    }
+
+    .Card a:last-child {
+        position: absolute;
+        inset-block-end: 2rem;
+        inline-size: 100%;
+    }
+
+    .Card a.active {
+        inline-size: 100%;
+        color: var(--color-primary);
+        background-color: var(--color-light);
+        margin-inline-start: 0;
+    }
+
+    .Card a.active ::before {
+        content: "";
+        inline-size: 6px;
+        block-size: 18px;
+        background-color: var(--color-primary);
+    }
+
+    .Card a.active span {
+        color: var(--color-primary);
+        margin-inline-start: calc(1rem - 3px);
+    }
+
+    .Card a:hover {
+        color: var(--color-primary);
+    }
+
+    .Card a:hover span {
+        margin-inline-start: 0.6rem;
+    }
+
+
+    .Card .screen .toggle {
+        background-color: #661c3c;
+        inline-size: 298px;
+        block-size: 200px;
+        margin-block-start: 32rem;
+        margin-inline-start: 1.5rem;
+        border-radius: 0.5rem;
+        transform: scale3d(1.1, 1.1, 1);
+        animation: star 10s ease-out infinite;
+        position: relative;
+    }
+
+    .Card .screen .toggle .screenmain img {
+        display: flex;
+        inline-size: 80px;
+        block-size: 70px;
+        border-radius: 0.5rem;
+        margin-inline-start: 217px;
+        margin-block-start: 130px;
+        position: absolute;
+    }
+
+
+
+
+
+    .Card .screen .toggle .rightscreen img {
+        display: flex;
+        inline-size: 80px;
+        block-size: 70px;
+        margin-inline-start: 217px;
+        border-radius: 0.5rem;
+        position: absolute;
+        inset-block-start: 0;
+        inset-inline-start: 0;
+
+
+    }
+
+
+    .Card .screen .toggle .right img {
+        inline-size: 25px;
+        block-size: 25px;
+        margin-block-start: 170px;
+        margin-inline-start: 315px;
+        border-radius: 0.2rem;
+        position: absolute;
+        inset-block-start: 0;
+        inset-inline-start: 0;
+        display: flex;
+    }
+
+    .Card .screen .toggle .screenchair img {
+        display: flex;
+        inline-size: 128.5px;
+        block-size: 200px;
+        margin-block-start: -430px;
+        margin-inline-start: 0px;
+        border-radius: 0.5rem;
+        position: relative;
+    }
+
+    .Card .screen .toggle button {
+        display: flex;
+        background-color: #f6f0d077;
+        border-radius: 0.3rem;
+        inline-size: 240px;
+        block-size: 170px;
+        margin-block-start: -185px;
+        margin-inline-start: 25px;
+        border-radius: 0.5rem;
+        transform: scale3d(1.1, 1.1, 1);
+        animation: star 10s ease-out infinite;
+        position: absolute;
+    }
+
+    .Card .screen .toggle .content .content1 {
+        background-color: #d324249c;
+        inline-size: 230px;
+        block-size: 160px;
+        border-radius: 0.5rem;
+        margin-inline-start: 5px;
+        margin-block-start: 5px;
+        position: relative;
+    }
+
+    .Card .screen .toggle .content .content1 .content2 {
+        background-color: #FFD67C;
+        inline-size: 8px;
+        block-size: 8px;
+        border-radius: 0.2rem;
+        transform: scale3d(1.1, 1.1, 1);
+        animation: star 10s ease-out infinite;
+        position: relative;
+    }
+
+    .Card .screen .toggle .content .content1 .content3 {
+        background: #FFD67C;
+        inline-size: 8px;
+        block-size: 8px;
+        border-radius: 0.2rem;
+        margin-block-start: 144.8px;
+        transform: scale3d(1.1, 1.1, 1);
+        animation: star 10s ease-out infinite;
+        position: relative;
+    }
+
+    .Card .screen .toggle .content .content1 .content4 {
+        background-color: #FFD67C;
+        inline-size: 8px;
+        block-size: 8px;
+        border-radius: 0.2rem;
+        margin-inline-start: 223px;
+        margin-block-start: -8px;
+        transform: scale3d(1.1, 1.1, 1);
+        transform: scale3d(1.1, 1.1, 1);
+        animation: star 10s ease-out infinite;
+        animation: star 10s ease-out infinite;
+        position: relative;
+
+    }
+
+    .Card .screen .toggle .content .content1 .content5 {
+        background-color: #FFD67C;
+        inline-size: 8px;
+        block-size: 8px;
+        border-radius: 0.2rem;
+        margin-inline-start: 222.4px;
+        margin-block-start: -161px;
+        transform: scale3d(1.1, 1.1, 1);
+        animation: star 10s ease-out infinite;
+        position: relative;
+    }
+
+    .Card .screen .toggle .content .content1 .content6 {
+        background-color: #e7a412bc;
+        inline-size: 217.2px;
+        block-size: 146px;
+        border-radius: 0.2rem;
+        margin-inline-start: 7px;
+        position: relative
+    }
+
+
+
+    .Card .screen .toggle .content .content1 .content6 .content7 {
+        background-color: #d3242456;
+        inline-size: 210px;
+        block-size: 139.3px;
+        border-radius: 2rem;
+        margin-block-start: 3.5px;
+        margin-inline-start: 3.5px;
+        position: absolute;
+
+    }
+
+    h13 {
+        color: #F8B700;
+        font-weight: 300;
+        font-size: 17px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    h14 {
+        color: rgba(232, 236, 10, 0.955);
+        font-weight: 900;
+        font-size: 12px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif fantasy;
+        font-style: oblique;
+
+    }
+
+    h15 {
+        font-size: 10px;
+        color: white;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    h16 {
+        color: #be0707;
+        font-size: 6.8px;
+        font-weight: 400;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    h17 {
+        color: #be0707;
+        font-size: 6.8px;
+        font-weight: 400;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    h18 {
+        color: #be0707;
+        font-size: 6.8px;
+        font-weight: 400;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    h19 {
+        color: #661c3c;
+        font-size: 8px;
+        font-weight: 800;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    h20 {
+        color: white;
+        font-size: 15px;
+    }
+
+    h21 {
+        color: white;
+        font-size: 8px;
+
+    }
+
+    h22 {
+        color: #F8B7;
+        font-size: 8px;
+    }
+
+    h23 {
+        color: #F7D060;
+        font-size: 10px;
+    }
+
+
+    .Card .screen .toggle .content .content1 .content6 .content7 .h13 {
+        margin-block-start: 0.5rem;
+    }
+
+    .Card .screen .toggle .content .content1 .content6 .content7 h16 {
+
+        margin-block-start: 1000px;
+        margin-inline-start: 10px;
+    }
+
+
+    .Card .screen .toggle .content .content1 .content6 .content7 h17 {
+        margin-inline-start: 10px;
+    }
+
+
+    .Card .screen .toggle .content .content1 .content6 .content7 h18 {
+        margin-inline-start: 10px;
+    }
+
+
+    .Card .screen .toggle .content .content1 .content6 .content7 h19 {
+
+        margin-inline-start: 70px;
+    }
+
+
+    .Card .screen .toggle .content .content1 .content6 .content7 .contentlongden {
+        background-color: #F7D060;
+        inline-size: 10px;
+        block-size: 10px;
+    }
+
+    .Card .screen .rightcontent {
+        position: absolute;
+        margin-block-start: 30px;
+        margin-inline-start: 20px;
+
+    }
+
+    .Card .screen .rightcontent .h21 {
+        block-size: 500px;
+        inline-size: 300px;
+        overflow: hidden;
+    }
+
+    .Card .screen .rightcontent .h22 {
+        margin-block-start: -250px;
+        margin-inline-start: 0px;
+        inline-size: 250px;
+        position: absolute;
+        overflow: hidden;
+    }
+
+    .Card .screen .rightcontent .h23 {
+        margin-block-start: -50px;
+        margin-inline-start: 120px;
+        position: absolute;
+        overflow: hidden;
+    }
+
+    .Card .phaohoa {
+        margin-block-start: -250px;
+    }
+
+}

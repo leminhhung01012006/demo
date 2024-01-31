@@ -1,0 +1,960 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+    --color-primary: #6C9BCF;
+    --color-danger: #ca35b3c3;
+    --color-sucess: #1B9C85;
+    --color-warning: #F7D060;
+    --color-info-dark: #7d8da1;
+    --color-dark: #bedc10e2;
+    --color-light: rgba(132, 139, 200, 0.18);
+    --color-dark-variant: #677483;
+
+
+    --card-border-radius: 2rem;
+    --border-radius-1: 0.4rem;
+    --border-radius: 2rem;
+
+    --card-padding: 1.8rem;
+    --padding-1: 1.2rem;
+
+    --box-shadow: 0 2rem 3rem var(--color-light);
+}
+
+
+.dark-mode-variable {
+    --color-background: #181a1e;
+    --color-white: #202528;
+    --color-dark: #5c6290dd;
+    --color-light: rgba(0, 0, 0, 0.4);
+    --box-shdow: 0 2rem 3rem var(--color-light);
+
+    .letter {
+        background: #4d5960;
+        color: aliceblue;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    appearance: 0;
+    border: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 14px;
+}
+
+body {
+    inline-size: 100vw;
+    block-size: 100vh;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.88rem;
+    user-select: none;
+    overflow: auto;
+    color: var(--color-dark);
+    background: #0E3746;
+}
+
+a {
+    color: var(--color-dark);
+}
+
+figure {
+    position: relative;
+}
+
+figure :before figure :after {
+    content: "";
+    block-size: 100%;
+    inline-size: 100%;
+    inset-block-start: 0;
+    inset-inline-start: 0;
+    position: absolute;
+}
+
+figurefacebook {
+    inline-size: 5rem;
+    block-size: 2rem;
+}
+
+smallfacebook {
+    color: #bf9f1ff1;
+}
+
+img {
+    display: block;
+    inline-size: 100%;
+    object-fit: cover;
+    block-size: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-weight: 800;
+    font-size: 1.8rem;
+}
+
+h2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 600;
+    font-size: 1.4rem;
+}
+
+h3 {
+    font-weight: 500;
+    font-size: 0.87rem;
+}
+
+h11 {
+    font-size: 1.2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 500;
+    color: rgba(245, 245, 245, 0.924);
+
+}
+
+small {
+    font-size: 0.76rem;
+}
+
+p {
+    color: var(--color-dark-variant);
+}
+
+b {
+    color: var(--color-dark);
+}
+
+.text-muted {
+    color: var(--color-info-dark);
+}
+
+
+.primary {
+    color: var(--color-primary);
+
+}
+
+.Fistname {
+    color: rgba(169, 11, 100, 0.842);
+}
+
+.danger {
+    color: var(--color-danger);
+}
+
+.success {
+    color: var(--color-sucess);
+}
+
+.warning {
+    color: var(--color-warning);
+}
+
+.container {
+    display: grid;
+    inline-size: 96%;
+    margin: 0 auto;
+    gap: 1.8rem;
+    grid-template-columns: 12rem auto 23rem;
+}
+
+aside {
+    block-size: 100vh;
+}
+
+aside .toggle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-block-start: 1.4rem;
+}
+
+aside .toggle .logo {
+    display: flex;
+    gap: 0.5rem;
+}
+
+aside .toggle .logo img {
+    inline-size: 2rem;
+    block-size: 2rem;
+}
+
+aside .toggle .close {
+    padding-inline-end: 1rem;
+    display: none;
+}
+
+aside .sidebar .CardNewYear {
+    color: #961d38;
+    font-weight: 900;
+}
+
+aside .sidebar {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-white);
+    box-shadow: var(--box-shadow);
+    border-radius: 15px;
+    block-size: 88vh;
+    position: relative;
+    inset-block-start: 1.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+aside .sidebar:hover {
+    box-shadow: none;
+}
+
+aside .sidebar a {
+    display: flex;
+    align-items: center;
+    color: var(--color-info-dark);
+    block-size: 3.7rem;
+    gap: 1rem;
+    position: relative;
+    margin-inline-start: 2rem;
+    transition: all 0.3s ease;
+}
+
+aside .sidebar a span {
+    font-size: 1.6rem;
+    transition: all 0.3s ease;
+}
+
+aside .sidebar a:last-child {
+    position: absolute;
+    inset-block-end: 2rem;
+    inline-size: 100%;
+}
+
+aside .sidebar a.active {
+    inline-size: 100%;
+    color: var(--color-primary);
+    background-color: var(--color-light);
+    margin-inline-start: 0;
+}
+
+aside .sidebar a.active ::before {
+    content: "";
+    inline-size: 6px;
+    block-size: 18px;
+    background-color: var(--color-primary);
+}
+
+aside .sidebar a.active span {
+    color: var(--color-primary);
+    margin-inline-start: calc(1rem - 3px);
+}
+
+aside .sidebar a:hover {
+    color: var(--color-primary);
+}
+
+aside .sidebar a:hover span {
+    margin-inline-start: 0.6rem;
+}
+
+
+aside .sidebar .message-count {
+    background-color: var(--color-danger);
+    padding: 2px 6px;
+    color: var(--color-white);
+    font-size: 11px;
+    border-radius: var(--border-radius-1);
+}
+
+main {
+    margin-block-start: 1.4rem;
+}
+
+main .analyse {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.6rem
+}
+
+main .analyse>div {
+    background-color: var(--color-white);
+    padding: var(--card-padding);
+    border-radius: var(--card-border-radius);
+    margin-block-start: 1rem;
+    box-shadow: var(--box-shadow);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+main .analyse>div:hover {
+    box-shadow: none;
+}
+
+main .analyse>div .status {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main .analyse h3 {
+    margin-inline-start: 0.6rem;
+    font-size: 1rem;
+}
+
+main .analyse .progresss {
+    position: relative;
+    inline-size: 92px;
+    block-size: 92px;
+    border-radius: 50%;
+}
+
+main .analyse svg {
+    inline-size: 7rem;
+    block-size: 7rem;
+}
+
+main .analyse svg circle {
+    fill: none;
+    stroke-width: 10;
+    stroke-linecap: round;
+    transform: translate(5px, 5px);
+}
+
+main .analyse .sales svg circle {
+    stroke: var(--color-sucess);
+    stroke-dashoffset: -30;
+    stroke-dasharray: 200;
+}
+
+main .analyse .visits svg circle {
+    stroke: var(--color-danger);
+    stroke-dashoffset: -30;
+    stroke-dasharray: 200;
+}
+
+main .analyse .searches svg circle {
+    stroke: var(--color-primary);
+    stroke-dashoffset: -30;
+    stroke-dasharray: 200;
+}
+
+main .analyse .progresss .percentage {
+    position: absolute;
+    inset-block-start: -3px;
+    inset-inline-start: -1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    block-size: 100%;
+    inline-size: 100%;
+
+}
+
+main .new-users {
+    margin-block-start: 1.3rem;
+}
+
+main .new-users .user-list {
+    background-color: var(--color-white);
+    padding: var(--card-padding);
+    border-radius: var(--card-border-radius);
+    margin-block-start: 1rem;
+    box-shadow: var(--box-shadow);
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1.4rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+main .new-users .user-list:hover {
+    box-shadow: none;
+}
+
+main .new-users .user-list .user {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+main .new-users .user-list .user img {
+    inline-size: 5rem;
+    block-size: 5rem;
+    margin-block-end: 0.4rem;
+    border-radius: 50%;
+}
+
+main .recent-orders {
+    margin-block-start: 1.3rem;
+}
+
+main .recent-orders h2 {
+    margin-block-end: 0.8rem;
+}
+
+main .recent-orders table {
+    background-color: var(--color-white);
+    inline-size: 100%;
+    padding: var(--card-padding);
+    text-align: center;
+    box-shadow: var(--box-shadow);
+    border-radius: var(--card-border-radius);
+    transition: all 0.3s ease;
+}
+
+main .recent-orders table :hover {
+    box-shadow: none;
+}
+
+main table tbody td {
+    block-size: 2.8rem;
+    border-block-end: 1px solid --color-light;
+    color: var(--color-dark-variant);
+}
+
+main table tbody tr :last-child td {
+    border: none;
+}
+
+main .recent-orders a {
+    text-align: center;
+    display: block;
+    margin: 1rem auto;
+    color: var(--color-primary);
+}
+
+
+
+
+.right-section {
+    margin-block-start: 1.4rem;
+}
+
+.right-section .nav {
+    display: flex;
+    justify-content: end;
+    gap: 2rem;
+}
+
+.right-section .nav .menu {
+    display: none;
+}
+
+.right-section .dark-mode {
+    background-color: var(--color-light);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    block-size: 1.6rem;
+    inline-size: 4.2rem;
+    cursor: pointer;
+    border-radius: var(--border-radius-1);
+}
+
+.right-section .dark-mode span {
+    font-size: 1.2rem;
+    inline-size: 50%;
+    block-size: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.right-section .dark-mode span.active {
+    background-color: var(--color-primary);
+    color: white;
+    border-radius: var(--border-radius-1);
+}
+
+.right-section .nav .profile {
+    display: flex;
+    gap: 2rem;
+    text-align: end;
+}
+
+.right-section .nav .profile .profile-photo {
+    inline-size: 2.8rem;
+    block-size: 2.8rem;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.right-section .user-profile {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-block-start: 1rem;
+    background-color: var(--color-white);
+    padding: var(--card-padding);
+    border-radius: var(--card-border-radius);
+    box-shadow: var(--box-shadow);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.right-section .user-profile:hover {
+    box-shadow: none;
+}
+
+.right-section .user-profile img {
+    inline-size: 11rem;
+    block-size: 11rem;
+    margin-block-end: 0.8rem;
+    border-radius: 50%;
+}
+
+.right-section .user-profile h2 {
+    margin-block-end: 0.2rem;
+}
+
+.right-section .reminders {
+    margin-block-start: 2rem;
+}
+
+.right-section .reminders .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-block-end: 0.8rem;
+
+}
+
+
+.right-section .reminders .header span {
+    padding: 10px;
+    box-shadow: var(--box-shadow);
+    background-color: var(--color-white);
+    border-radius: 50%;
+}
+
+.right-section .reminders .notification {
+    background-color: var(--color-white);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-block-end: 0.7rem;
+    padding: 1.4rem --card-padding;
+    border-radius: var(--border-radius-2);
+    box-shadow: var(--box-shadow);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.right-section .reminders .notification:hover {
+    box-shadow: none;
+}
+
+.right-section .reminders .notification .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    inline-size: 100%;
+}
+
+.right-section .reminders .notification .icon {
+    padding: 0.6rem;
+    color: var(--color-white);
+    background-color: var(--color-sucess);
+    border-radius: 20%;
+    display: flex;
+}
+
+.right-section .reminders .notification .deactive .icon {
+    background-color: var(--color-danger);
+}
+
+.right-section .reminders .notification .facebook .icon {
+    background-color: var(--color-danger);
+}
+
+.right-section .reminders .add-reminder {
+    background-color: var(--color-white);
+    border: 2px dashed var(--color-primary);
+    color: var(--color-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.right-section .reminders .add-reminder:hover {
+    background-color: var(--color-primary);
+    color: white;
+}
+
+.right-section .reminders .add-reminder div {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.letter {
+    background-color: rgba(255, 255, 255, 0.974);
+    color: #181a1e;
+    display: none;
+    gap: 1.6rem;
+    block-size: 40rem;
+    inline-size: 39rem;
+    cursor: pointer;
+    border-radius: var(--border-radius-1);
+    z-index: 3;
+    justify-content: space-around;
+    position: absolute;
+    margin-block-start: 6rem;
+    margin-inline-start: 14rem;
+    margin-inline-end: 12rem;
+
+}
+
+.letter .write {
+    margin-inline-start: 2rem;
+    margin-block-start: 2rem;
+    margin-inline-end: 2rem;
+}
+
+.letter .write h3 {
+    font-size: 1rem;
+}
+
+.letter .write h4 {
+    font-size: 1.3rem;
+    inline-size: 30rem;
+    margin-inline-start: 10%;
+
+}
+
+.letter .write h5 {
+    inline-size: 30rem;
+    font-size: 1.4rem;
+    margin-block-start: 50px;
+    margin-inline-start: 69%;
+}
+
+.letter .close {
+
+    margin-block-start: 2rem;
+    margin-inline-start: 37rem;
+}
+
+
+.video {
+    display: none;
+    flex-direction: column;
+    margin-block-start: -42.55rem;
+    margin-inline-start: 8rem;
+    inline-size: 7.5rem;
+    z-index: 3;
+    gap: 1rem;
+    align-items: center;
+    color: var(--color-info-dark);
+    position: relative;
+    flex-direction: column;
+    background-color: rgba(59, 61, 74, 0.957);
+    box-shadow: var(--box-shadow);
+    border-radius: 9px;
+    block-size: 6rem;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.video .video1 {
+    margin-inline-start: 0.3rem;
+}
+
+
+.video h3 {
+    margin-block-start: -1.75rem;
+    margin-inline-start: 2.5rem;
+}
+
+.video .video2 {
+    margin-inline-start: 0.3rem;
+    margin-block-start: 0.5rem;
+}
+
+.video .video3 {
+    margin-inline-start: 0.3rem;
+    margin-block-start: 0.5rem;
+}
+
+.video :hover {
+    box-shadow: none;
+}
+
+.video a {
+
+    color: var(--color-info-dark);
+    transition: all 0.3s ease;
+}
+
+.video a span {
+    font-size: 1.6rem;
+    transition: all 0.3s ease;
+}
+
+.video a:last-child {
+    inset-block-end: 2rem;
+    inline-size: 100%;
+}
+
+.video a.active {
+    inline-size: 100%;
+    color: var(--color-primary);
+    background-color: var(--color-light);
+    margin-inline-start: 0;
+}
+
+.video a.active ::before {
+    content: "";
+    inline-size: 6px;
+    block-size: 18px;
+    background-color: var(--color-primary);
+}
+
+.video a.active span {
+    color: var(--color-primary);
+    margin-inline-start: calc(1rem -3px);
+}
+
+.video a:hover {
+    color: var(--color-primary);
+}
+
+.video a:hover span {
+    margin-inline-start: 0.6rem;
+}
+
+.video .close {
+    margin-block-start: 0.5rem;
+    margin-inline-start: 4.5rem;
+}
+
+
+
+
+
+
+
+@media screen and (max-width : 1200px) {
+    .container {
+        inline-size: 95%;
+        grid-template-columns: 7rem auto 23rem;
+
+    }
+
+    aside .logo h2 {
+        display: none;
+    }
+
+    aside .sidebar h3 {
+        display: none;
+    }
+
+    aside .sidebar a {
+        inline-size: 5.6rem;
+    }
+
+    aside .sidebar a:last-child {
+        position: relative;
+        margin-block-start: 1.8rem;
+    }
+
+    main .analyse {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    main .new-users .user-list .user {
+        flex-basis: 40%;
+    }
+
+    main .recent-orders {
+        inline-size: 94%;
+        position: absolute;
+        inset-inline-start: 50%;
+        transform: translateX(-50%);
+        margin: 2rem 0 0 0, 8rem;
+    }
+
+    main .recent-orders table {
+        inline-size: 83vw;
+    }
+
+
+    .letter {
+        margin-inline-start: 9rem;
+    }
+
+    .video {
+        margin-block-start: -61.5rem;
+        margin-inline-start: 4rem;
+    }
+}
+
+@media screen and (max-width : 768px) {
+    .container {
+        inline-size: 100%;
+        grid-template-columns: 1fr;
+        padding: 0 var(--padding-1);
+    }
+
+    aside {
+        position: fixed;
+        background-color: var(--color-white);
+        inline-size: 15rem;
+        z-index: 3;
+        box-shadow: 1rem 3 rem 4rem var(--color-light);
+        block-size: 100vh;
+        inset-inline-start: -100%;
+        display: none;
+        animation: showMenu 0.4s ease forwards;
+    }
+
+    @keyframes showMenu {
+        to {
+            inset-inline-start: 0;
+        }
+
+    }
+
+    aside .logo {
+        margin-inline-start: 1rem;
+    }
+
+    aside .logo h2 {
+        display: inline;
+    }
+
+    aside .sidebar h3 {
+        display: inline;
+    }
+
+    aside .sidebar a {
+        inline-size: 100%;
+        block-size: 3.4rem;
+    }
+
+    aside .sidebar a:last-child {
+        position: absolute;
+        inset-block-end: 5rem;
+    }
+
+    aside .toggle .close {
+        display: inline-block;
+        cursor: pointer;
+    }
+
+    main {
+        margin-block-start: 8rem;
+        padding: 0 1rem;
+    }
+
+    main .new-users .user-list .user {
+        flex-basis: 35%;
+    }
+
+    main .recent-orders {
+        position: relative;
+        margin: 3rem 0 0 0;
+        inline-size: 100%;
+    }
+
+    main .recent-orders table {
+        inline-size: 100%;
+        margin: 0;
+    }
+
+    .right-section {
+        inline-size: 94%;
+        margin: 0 auto 4rem;
+    }
+
+    .right-section .nav {
+        position: fixed;
+        inset-block-start: 0;
+        inset-inline-start: 0;
+        align-items: center;
+        background-color: var(--color-white);
+        padding: 0 var(--padding-1);
+        block-size: 4.6rem;
+        inline-size: 100%;
+        z-index: 2;
+        box-shadow: 0 1rem 1rem var(--color-light);
+        margin: 0;
+    }
+
+    .right-section .nav .dark-mode {
+        inline-size: 4.4rem;
+        position: absolute;
+        inset-inline-start: 66%;
+
+    }
+
+    .right-section .profile .info {
+        display: none;
+    }
+
+    .right-section .nav .menu {
+        display: inline-block;
+        background-color: transparent;
+        color: var(--color-dark);
+        position: absolute;
+        inset-inline-start: 1rem;
+    }
+
+    .right-section .nav button span {
+        font-size: 2rem;
+    }
+
+    .letter {
+        margin-inline-start: 1rem;
+        background-color: #f6f6f9df;
+        margin-block-start: 8.5rem;
+    }
+
+    .video {
+        margin-block-start: -130rem;
+    }
+
+}
+
+@media screen and (max-width : 450px) {
+    .letter {
+        margin-inline-start: 0;
+        inline-size: 300px;
+        block-size: 900px;
+    }
+
+    .letter .write h4 {
+        font-size: 1.3rem;
+        inline-size: 30rem;
+        margin-inline-start: 10%;
+        inline-size: 200px;
+        block-size: 40px;
+
+    }
+
+    .letter .write h5 {
+        inline-size: 30rem;
+        font-size: 1.4rem;
+        margin-block-start: 200px;
+        margin-inline-start: 40%;
+    }
+
+    .letter .close {
+
+        margin-block-start: 2rem;
+        margin-inline-start: 19rem;
+    }
+
+}

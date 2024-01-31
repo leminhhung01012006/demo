@@ -1,0 +1,501 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+h2 {
+    font-weight: 900;
+    font-size: 1.6rem;
+}
+
+h6 {
+    font-weight: 800;
+    font-size: 1.2rem
+}
+
+h7 {
+    font-weight: 800;
+    font-size: 0.8rem;
+}
+
+h8 {
+    font-weight: 900;
+    font-size: 1rem;
+    color: rgba(21, 50, 196, 0.722);
+}
+
+h9 {
+    font-weight: 1000;
+    font-size: 1.2rem;
+    color: var(--color-dark-variant);
+}
+
+
+
+:root {
+    --color-primary: #6C9BCF;
+    --color-danger: #ca35b3c3;
+    --color-sucess: #1B9C85;
+    --color-warning: #F7D060;
+    --color-info-dark: #7d8da1;
+    --color-dark: #363949;
+    --color-light: rgba(132, 139, 200, 0.18);
+    --color-dark-variant: #677483;
+    --card-border-radius: 2rem;
+    --border-radius-1: 0.4rem;
+    --border-radius: 2rem;
+    --card-padding: 1.8rem;
+    --padding-1: 1.2rem;
+    --box-shadow: 0 2rem 3rem var(--color-light);
+}
+
+
+.dark-mode-variable {
+    --color-background: #181a1e;
+    --color-white: #202528;
+    --color-dark: #5c6290dd;
+    --color-light: rgba(0, 0, 0, 0.4);
+    --box-shdow: 0 2rem 3rem var(--color-light);
+
+}
+
+@keyframes showMenu {
+    to {
+        inset-inline-start: 0;
+    }
+
+}
+
+
+.Memories {
+    display: none;
+    inline-size: 100%;
+    margin: 0 auto;
+    gap: 1.8rem;
+    background: linear-gradient(#DCF2DE, #A67926, #F2D5BE, #F2955E, #F28F79);
+    overflow: hidden;
+    grid-template-columns: 12rem auto 23rem;
+
+
+}
+
+asideMemories {
+    block-size: 100vh;
+    position: fixed;
+}
+
+asideMemories .toggle {
+    display: flex;
+    align-items: center;
+    align-items: center;
+    margin-block-start: 1.4rem;
+}
+
+asideMemories .toggle .logo {
+    margin-inline-start: 0.8rem;
+    display: flex;
+    gap: 0.5rem;
+}
+
+asideMemories .toggle .logo img {
+    inline-size: 2rem;
+    block-size: 2rem;
+}
+
+asideMemories .screen {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-white);
+    box-shadow: var(--box-shadow);
+    border-radius: 15px;
+    block-size: 88vh;
+    position: relative;
+    inline-size: 10rem;
+    inset-block-start: 1.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+asideMemories .screen:hover {
+    box-shadow: none;
+}
+
+asideMemories .screen a {
+    display: flex;
+    align-items: center;
+    color: var(--color-info-dark);
+    block-size: 3.7rem;
+    gap: 1rem;
+    position: relative;
+    margin-inline-start: 2rem;
+    transition: all 0.3s ease;
+}
+
+asideMemories .screen a span {
+    font-size: 1.6rem;
+    transition: all 0.3s ease;
+}
+
+asideMemories .screen a:last-child {
+    position: absolute;
+    inset-block-end: 2rem;
+    inline-size: 100%;
+}
+
+asideMemories .screen a.active {
+    inline-size: 100%;
+    color: var(--color-primary);
+    background-color: var(--color-light);
+    margin-inline-start: 0;
+}
+
+asideMemories .screen a.active ::before {
+    content: "";
+    inline-size: 6px;
+    block-size: 18px;
+    background-color: var(--color-primary);
+}
+
+asideMemories .screen a.active span {
+    color: var(--color-primary);
+    margin-inline-start: calc(1rem - 3px);
+}
+
+asideMemories .screen a:hover {
+    color: var(--color-primary);
+}
+
+asideMemories .screen a:hover span {
+    margin-inline-start: 0.6rem;
+}
+
+.screen .home {
+    margin-block-start: -1000px;
+}
+
+.Memories .homez {
+    display: none;
+}
+
+
+.Memories .dark-mode-memories {
+    margin-block-start: 0.8rem;
+    margin-inline-start: 35rem;
+    background-color: var(--color-light);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    block-size: 1.6rem;
+    inline-size: 4.2rem;
+    cursor: pointer;
+    border-radius: var(--border-radius-1);
+    position: fixed;
+}
+
+.Memories .dark-mode-memories span {
+    font-size: 1.2rem;
+    inline-size: 50%;
+    block-size: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Memories .dark-mode-memories span.active {
+    background-color: var(--color-primary);
+    color: white;
+    border-radius: var(--border-radius-1);
+}
+
+
+
+.Memories .container-video {
+    display: flex;
+    align-items: center;
+}
+
+.Memories .container-video .video1-btn video {
+    border-radius: 0.5rem;
+    margin-block-start: 4rem;
+    margin-inline-start: 27rem;
+}
+
+.Memories .write-video1-btn h9 {
+    margin-inline-start: 29rem;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+.Memories .container-video .video2-btn video {
+    border-radius: 0.5rem;
+    margin-block-start: 4rem;
+    margin-inline-start: 27rem;
+}
+
+.Memories .write-video2-btn h9 {
+    margin-inline-start: 29rem;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+.Memories .container-video .video3-btn video {
+    border-radius: 0.5rem;
+    margin-block-start: 4rem;
+    margin-inline-start: 27rem;
+}
+
+.Memories .write-video3-btn h9 {
+    margin-inline-start: 29rem;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+.Memories .container-video .video4-btn video {
+    border-radius: 0.5rem;
+    margin-block-start: 4rem;
+    margin-inline-start: 27rem;
+}
+
+.Memories .write-video4-btn h9 {
+    margin-inline-start: 29rem;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+@media screen and (max-width : 1200px) {
+    .Memories .screen .toggle .logo h2 {
+        display: none;
+    }
+
+    .Memories .dark-mode-memories {
+        margin-block-start: 0.8rem;
+        margin-inline-start: 20rem;
+        background-color: var(--color-light);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        block-size: 1.6rem;
+        inline-size: 4.2rem;
+        cursor: pointer;
+        border-radius: var(--border-radius-1);
+        position: fixed;
+    }
+
+
+
+    .Memories .container-video .video1-btn video {
+
+        margin-block-start: 4rem;
+        margin-inline-start: 15rem;
+    }
+
+    .Memories .write-video1-btn h9 {
+        margin-inline-start: 19rem;
+        font-family: 'Courier New', Courier, monospace;
+
+    }
+
+    .Memories .container-video .video2-btn video {
+
+        margin-block-start: 4rem;
+        margin-inline-start: 15rem;
+    }
+
+    .Memories .write-video2-btn h9 {
+        margin-inline-start: 19rem;
+        font-family: 'Courier New', Courier, monospace;
+
+    }
+
+    .Memories .container-video .video3-btn video {
+
+        margin-block-start: 4rem;
+        margin-inline-start: 15rem;
+    }
+
+    .Memories .write-video3-btn h9 {
+        margin-inline-start: 16rem;
+        font-family: 'Courier New', Courier, monospace;
+
+    }
+
+    .Memories .container-video .video4-btn video {
+
+        margin-block-start: 4rem;
+        margin-inline-start: 15rem;
+    }
+
+    .Memories .write-video4-btn h9 {
+        margin-inline-start: 19rem;
+        font-family: 'Courier New', Courier, monospace;
+
+    }
+
+}
+
+@media screen and (max-width : 768px) {
+    asideMemories .screen {
+        display: none;
+    }
+
+    .Memories .write-video1-btn h9 {
+        display: none;
+    }
+
+    .Memories .write-video2-btn h9 {
+        display: none;
+    }
+
+    .Memories .write-video3-btn h9 {
+        display: none;
+    }
+
+    .Memories .write-video4-btn h9 {
+        display: none;
+    }
+
+    .Memories .homez {
+        position: fixed;
+        display: inline-block;
+
+    }
+
+    .Memories b {
+        display: flex;
+        align-items: center;
+        color: var(--color-info-dark);
+        block-size: 3.7rem;
+        gap: 1rem;
+        position: relative;
+        margin-inline-start: 2rem;
+        transition: all 0.3s ease;
+    }
+
+    .Memories b span {
+        font-size: 1.6rem;
+        transition: all 0.3s ease;
+    }
+
+    .Memories b:last-child {
+        position: absolute;
+        inset-block-end: 2rem;
+        inline-size: 100%;
+    }
+
+    .Memories b.active {
+        inline-size: 100%;
+        color: var(--color-primary);
+        background-color: var(--color-light);
+        margin-inline-start: 0;
+    }
+
+    .Memories b.active ::before {
+        content: "";
+        inline-size: 6px;
+        block-size: 18px;
+        background-color: var(--color-primary);
+    }
+
+    .Memories b.active span {
+        color: var(--color-primary);
+        margin-inline-start: calc(1rem - 3px);
+    }
+
+    .Memories b:hover {
+        color: var(--color-primary);
+    }
+
+    .Memories b:hover span {
+        margin-inline-start: 0.6rem;
+    }
+
+    .Memories .container-video .video1-btn video {
+
+        margin-block-start: 4rem;
+        margin-inline-start: 6rem;
+    }
+
+    .Memories .container-video .video2-btn video {
+
+        margin-block-start: 4rem;
+        margin-inline-start: 6rem;
+    }
+
+    .Memories .container-video .video3-btn video {
+
+        margin-block-start: 4rem;
+        margin-inline-start: 6rem;
+    }
+
+    .Memories .container-video .video4-btn video {
+
+        margin-block-start: 4rem;
+        margin-inline-start: 6rem;
+    }
+
+
+
+}
+
+@media screen and (max-width : 450px) {
+    .Memories {
+        overflow: hidden;
+    }
+
+    .Memories .container-video .video1-btn video {
+        margin-inline-start: 0.6rem;
+        inline-size: 420px;
+        border-radius: 0.5rem;
+    }
+
+    .Memories .container-video .video2-btn video {
+        margin-inline-start: 0.6rem;
+        inline-size: 420px;
+        border-radius: 0.5rem;
+    }
+
+    .Memories .container-video .video3-btn video {
+        margin-inline-start: 0.6rem;
+        inline-size: 420px;
+        border-radius: 0.5rem;
+    }
+
+    .Memories .container-video .video4-btn video {
+        margin-inline-start: 0.6rem;
+        inline-size: 420px;
+        border-radius: 0.5rem;
+    }
+
+
+
+}
+
+@media screen and (max-width : 360px) {
+    .Memories {
+        overflow: hidden;
+    }
+
+    .Memories .container-video .video1-btn video {
+        margin-inline-start: 1.5rem;
+        inline-size: 320px;
+        border-radius: 0.5rem;
+    }
+
+    .Memories .container-video .video2-btn video {
+        margin-inline-start: 1.5rem;
+        inline-size: 320px;
+        border-radius: 0.5rem;
+    }
+
+    .Memories .container-video .video3-btn video {
+        margin-inline-start: 1.5rem;
+        inline-size: 320px;
+        border-radius: 0.5rem;
+    }
+
+    .Memories .container-video .video4-btn video {
+        margin-inline-start: 1.5rem;
+        inline-size: 320px;
+        border-radius: 0.5rem;
+    }
+
+
+
+}
