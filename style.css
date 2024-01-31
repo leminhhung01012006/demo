@@ -959,3 +959,13 @@ main .recent-orders a {
     }
 
 }
+
+
+@media screen and (max-width : 400px) {
+    .letter .close {
+
+        margin-block-start: 0rem;
+        margin-inline-start: 19rem;
+    }
+
+}

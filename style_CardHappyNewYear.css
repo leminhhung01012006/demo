@@ -91,10 +91,10 @@ h23 {
 
 
 .Card {
-    display: none;
+    display: noe;
     background-color: black;
     inline-size: 100%;
-    block-size: 845px;
+    block-size: 100%px;
     overflow: hidden;
 }
 
@@ -398,7 +398,7 @@ h23 {
 @media screen and (max-width : 450px) {
     .Card {
         inline-size: 100%;
-        block-size: 100%;
+        block-size: 1000px;
     }
 
 
@@ -732,7 +732,7 @@ h23 {
     }
 
     .Card .screen .rightcontent .h22 {
-        margin-block-start: -250px;
+        margin-block-start: -200px;
         margin-inline-start: 0px;
         inline-size: 280px;
         position: absolute;
@@ -740,7 +740,7 @@ h23 {
     }
 
     .Card .screen .rightcontent .h23 {
-        margin-block-start: -50px;
+        margin-block-start: -30px;
         margin-inline-start: 150px;
         position: absolute;
         overflow: hidden;
@@ -755,7 +755,7 @@ h23 {
 @media screen and (max-width : 360px) {
     .Card {
         inline-size: 100%;
-        block-size: 100%;
+        block-size: 1000px;
     }
 
     .Card .screen .home4 {
