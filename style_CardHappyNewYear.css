@@ -723,7 +723,7 @@ h23 {
         margin-block-start: 20px;
         margin-inline-start: 60px;
         overflow: auto;
-        max-height: 45vh;
+        max-block-size: 45vh;
 
     }
 
@@ -1082,7 +1082,7 @@ h23 {
         margin-block-start: 30px;
         margin-inline-start: 20px;
         overflow: auto;
-        max-height: 45vh;
+        max-block-size: 45vh;
     }
 
     .Card .screen .rightcontent .h21 {
