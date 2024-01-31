@@ -401,6 +401,8 @@ h23 {
         block-size: 100%;
     }
 
+
+
     .Card .screen .home4 {
         margin-inline-start: 0rem;
         margin-block-start: 0rem;
@@ -720,6 +722,8 @@ h23 {
         position: absolute;
         margin-block-start: 20px;
         margin-inline-start: 60px;
+        overflow: auto;
+        max-height: 45vh;
 
     }
 
@@ -1077,7 +1081,8 @@ h23 {
         position: absolute;
         margin-block-start: 30px;
         margin-inline-start: 20px;
-
+        overflow: auto;
+        max-height: 45vh;
     }
 
     .Card .screen .rightcontent .h21 {

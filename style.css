@@ -184,6 +184,7 @@ aside .toggle .logo {
 aside .toggle .logo img {
     inline-size: 2rem;
     block-size: 2rem;
+    border-radius: 50%;
 }
 
 aside .toggle .close {
@@ -809,8 +810,8 @@ main .recent-orders a {
     }
 
     aside {
+        background-color: #fff;
         position: fixed;
-        background-color: var(--color-white);
         inline-size: 15rem;
         z-index: 3;
         box-shadow: 1rem 3 rem 4rem var(--color-light);
